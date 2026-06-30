@@ -8,7 +8,7 @@
  */
 const CONFIG = {
   githubOwner: "tpos8",
-  githubRepo: "tpos8",
+  githubRepo: "do-or-not",
   assetPattern: /\.apk$/i,
   cacheMinutes: 5,
   maxReleasePages: 5
