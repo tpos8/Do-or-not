@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DO OR NOT：摇一摇，抽一签，让轻量选择变得简单。">
+  <meta name="theme-color" content="#f3eee4">
+  <title>DO OR NOT · Shake. Draw. Decide.</title>
+
+  <link rel="icon" type="image/png" href="./assets/app-icon.png">
+  <link rel="apple-touch-icon" href="./assets/app-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="DO OR NOT 首页">
+      <img src="./assets/app-icon.png" alt="">
+      <span>DO OR NOT</span>
+    </a>
+
+    <nav aria-label="主导航">
+      <a href="#features">功能</a>
+      <a href="#preview">界面</a>
+      <a class="nav-download" href="#download">下载</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          轻量生活选择工具
+        </div>
+
+        <h1>把犹豫，<br><em>交给一支签。</em></h1>
+
+        <p class="hero-description">
+          写下一个可以用“做”或“不做”回答的问题，摇动手机三次，
+          让 DO OR NOT 给你一个干脆的答案。
+        </p>
+
+        <div class="hero-actions">
+          <a
+            id="downloadButton"
+            class="primary-button"
+            href="https://github.com/tpos8/tpos8/releases"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>下载 Android App</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/>
+            </svg>
+          </a>
+
+          <a class="text-button" href="#preview">
+            查看界面
+            <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+
+        <div class="download-counter" aria-live="polite">
+          <span class="live-dot" aria-hidden="true"></span>
+          <div>
+            <strong id="downloadCount">正在读取下载量…</strong>
+            <small id="downloadMeta">数据来自 GitHub Releases</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="DO OR NOT 应用界面预览">
+        <div class="halo halo-one"></div>
+        <div class="halo halo-two"></div>
+
+        <div class="phone phone-main">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <img src="./assets/screenshots/question.jpg" alt="DO OR NOT 问题输入界面">
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-top">
+          <span>SHAKE</span>
+          <strong>摇三次</strong>
+        </div>
+
+        <div class="floating-card floating-card-bottom">
+          <span>DECIDE</span>
+          <strong>得到答案</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features section-shell">
+      <div class="section-heading">
+        <span>01 / 为什么是它</span>
+        <h2>少一点纠结，<br>多一点行动。</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>写下问题</h3>
+          <p>把脑海里的犹豫，整理成一个可以用“做”或“不做”回答的问题。</p>
+        </article>
+
+        <article class="feature-card featured">
+          <span class="feature-number">02</span>
+          <h3>摇动抽签</h3>
+          <p>连续摇动手机三次，用一点仪式感结束无休止的反复权衡。</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>接受答案</h3>
+          <p>得到 DO 或 NOT。答案不替你负责，但会帮你看清第一反应。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="preview" class="preview-section">
+      <div class="section-shell">
+        <div class="section-heading preview-heading">
+          <span>02 / 应用界面</span>
+          <h2>像抽签一样自然，<br>像一张纸一样简单。</h2>
+          <p>暖米色、木质棕和朱砂红延续应用本身的视觉语言。</p>
+        </div>
+
+        <div class="phone-gallery">
+          <figure class="gallery-item gallery-item-1">
+            <div class="phone phone-gallery-frame">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <img src="./assets/screenshots/splash.png" alt="DO OR NOT 启动页">
+              </div>
+            </div>
+            <figcaption>打开应用</figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-item-2">
+            <div class="phone phone-gallery-frame">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <img src="./assets/screenshots/question.jpg" alt="输入选择问题">
+              </div>
+            </div>
+            <figcaption>写下问题</figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-item-3">
+            <div class="phone phone-gallery-frame">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <img src="./assets/screenshots/shake.jpg" alt="摇动手机抽签">
+              </div>
+            </div>
+            <figcaption>摇动抽签</figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-item-4">
+            <div class="phone phone-gallery-frame">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <img src="./assets/screenshots/result.jpg" alt="查看 DO OR NOT 答案">
+              </div>
+            </div>
+            <figcaption>接受答案</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="ritual section-shell">
+      <div class="ritual-mark">“</div>
+      <blockquote>
+        有时候你缺的不是更多分析，<br>
+        只是一个让自己开始行动的瞬间。
+      </blockquote>
+      <p>DO OR NOT 只适用于轻量生活选择，请勿用于医疗、法律、财务或安全相关决策。</p>
+    </section>
+
+    <section id="download" class="download-section">
+      <div class="download-card section-shell">
+        <div class="download-copy">
+          <span>03 / 开始抽签</span>
+          <h2>下一次犹豫，<br>交给 DO OR NOT。</h2>
+          <p>当前提供 Android 安装包。下载按钮会自动链接到 GitHub Releases 中最新发布的 APK。</p>
+        </div>
+
+        <div class="download-action">
+          <img src="./assets/app-icon.png" alt="DO OR NOT 应用图标">
+          <div>
+            <strong>DO OR NOT</strong>
+            <small>Shake. Draw. Decide.</small>
+          </div>
+
+          <a
+            id="downloadButtonBottom"
+            class="primary-button"
+            href="https://github.com/tpos8/tpos8/releases"
+            target="_blank"
+            rel="noopener"
+          >
+            下载最新版
+          </a>
+
+          <p id="downloadCountBottom">正在同步下载量…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-brand">
+      <img src="./assets/app-icon.png" alt="">
+      <div>
+        <strong>DO OR NOT</strong>
+        <small>SHAKE. DRAW. DECIDE.</small>
+      </div>
+    </div>
+
+    <p>© <span id="year"></span> DO OR NOT · <a href="./privacy.html">隐私政策</a></p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
