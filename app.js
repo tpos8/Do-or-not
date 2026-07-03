@@ -27,7 +27,8 @@ const downloadButtons = [
   document.querySelector("#downloadButtonBottom")
 ].filter(Boolean);
 
-document.querySelector("#year").textContent = new Date().getFullYear();
+const yearElement = document.querySelector("#year");
+if (yearElement) yearElement.textContent = new Date().getFullYear();
 
 function formatNumber(value) {
   return new Intl.NumberFormat("zh-CN").format(value);
@@ -53,13 +54,15 @@ function renderStats(stats, fromCache = false) {
     ? `已累计下载 ${formatNumber(total)} 次`
     : "安装包等待首次发布";
 
-  countElement.textContent = countText;
-  countBottomElement.textContent = total > 0
-    ? `${formatNumber(total)} 次累计下载`
-    : "发布 APK 后自动显示下载量";
+  if (countElement) countElement.textContent = countText;
+  if (countBottomElement) {
+    countBottomElement.textContent = total > 0
+      ? `${formatNumber(total)} 次累计下载`
+      : "发布 APK 后自动显示下载量";
+  }
 
   const sourceText = fromCache ? "缓存数据" : "GitHub Releases";
-  metaElement.textContent = `${sourceText} · ${formatTime(stats.updatedAt)} 更新`;
+  if (metaElement) metaElement.textContent = `${sourceText} · ${formatTime(stats.updatedAt)} 更新`;
 
   setDownloadLink(stats.latestApkUrl || RELEASES_PAGE);
 }
@@ -161,9 +164,9 @@ async function loadDownloadStats() {
     console.error(error);
 
     if (!cached) {
-      countElement.textContent = "下载量暂时无法读取";
-      countBottomElement.textContent = "可前往 GitHub Releases 下载";
-      metaElement.textContent = "请稍后刷新页面";
+      if (countElement) countElement.textContent = "下载量暂时无法读取";
+      if (countBottomElement) countBottomElement.textContent = "可前往 GitHub Releases 下载";
+      if (metaElement) metaElement.textContent = "请稍后刷新页面";
       setDownloadLink(RELEASES_PAGE);
     }
   }

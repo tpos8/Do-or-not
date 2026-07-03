@@ -1,0 +1,11 @@
+{
+  "version": "1.0.2",
+  "generated": "2026-07-03",
+  "pages": [
+    "index.html",
+    "update-1.0.2.html",
+    "privacy.html"
+  ],
+  "repository": "tpos8/do-or-not",
+  "custom_domain": "do.smallorbit.cn"
+}
